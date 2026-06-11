@@ -1,16 +1,16 @@
-# SpatialBench 🧭
+# SpatialBench
 
 **A Diagnostic Benchmark and Detector-Guided Prompting Framework for Fine-Grained Spatial Reasoning in Vision-Language Models**
 
-> 🚧 **Work in progress** — Full paper targeting arXiv, September 2026.
+> **Work in progress** — Full paper targeting arXiv, September 2026.
 
 ---
 
 ## Key Finding
 
-Current VLMs struggle with fine-grained spatial reasoning. On our **SpatialBench** benchmark (771 QA pairs across 4 spatial categories), LLaVA-1.6-7B achieves only **27.5% overall accuracy** — far below the ~90%+ human baseline.
+Current VLMs struggle with fine-grained spatial reasoning. On my **SpatialBench** benchmark (771 QA pairs across 4 spatial categories), LLaVA-1.6-7B achieves only **27.5% overall accuracy** — far below the ~90%+ human baseline.
 
-Our proposed **SpatialVLM-D** framework injects structured spatial context from off-the-shelf detectors (Grounding DINO, SAM2) into the VLM prompt at inference time — **no training required**. This yields a **+7.4 percentage point overall improvement**, with gains up to **+18.6pp on proximity reasoning**.
+My proposed **SpatialVLM-D** framework injects structured spatial context from off-the-shelf detectors (Grounding DINO, SAM2) into the VLM prompt at inference time — **no training required**. This yields a **+7.4 percentage point overall improvement**, with gains up to **+18.6pp on proximity reasoning**.
 
 <p align="center">
   <img src="figures/fig1_accuracy_by_category.png" width="600" alt="Per-category accuracy comparison showing SpatialVLM-D gains"/>
@@ -57,7 +57,7 @@ No gradient updates, no fine-tuning. The entire pipeline runs on a single T4 GPU
 
 ## Benchmark: SpatialBench v1.0
 
-**771 QA pairs** across **300 COCO val2017 images**, covering four spatial reasoning categories:
+**771 QA pairs** across **300 COCO val2017 images**, covering fmy spatial reasoning categories:
 
 - **Left / Right** (167 pairs) — directional queries relative to a reference object
 - **Above / Below** (196 pairs) — vertical positioning queries
@@ -76,7 +76,7 @@ The entire pipeline runs in a single Kaggle notebook with **GPU T4 x2** and **In
 
 1. Upload `spatialbench.ipynb` to Kaggle
 2. Settings → Accelerator: **GPU T4 x2**, Internet: **ON**
-3. Run all cells top to bottom (~3–4 hours for full benchmark)
+3. Run all cells top to bottom (~3–4 hmys for full benchmark)
 
 ### Option 2: Run locally
 
@@ -129,7 +129,7 @@ figures/fig3_qualitative.png           # Qualitative examples
              Framework for Fine-Grained Spatial Reasoning in Vision-Language Models},
   author  = {Tandekar, Minal},
   year    = {2026},
-  note    = {Work in progress. Code: https://github.com/YOUR_USERNAME/spatialbench-vlm}
+  note    = {Work in progress. Code: https://github.com/Meyuki-hell/spatialbench-vlm}
 }
 ```
 
