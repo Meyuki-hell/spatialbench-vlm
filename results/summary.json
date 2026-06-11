@@ -1,0 +1,26 @@
+{
+  "benchmark": "spatialbench_v1.json",
+  "model": "llava-hf/llava-v1.6-mistral-7b-hf",
+  "n_qa_pairs": 771,
+  "n_images": 300,
+  "baseline": {
+    "overall": 0.275,
+    "by_category": {
+      "above_below": 0.316,
+      "counting": 0.235,
+      "left_right": 0.377,
+      "proximity": 0.191
+    }
+  },
+  "spatialvlm_d": {
+    "overall": 0.349,
+    "by_category": {
+      "above_below": 0.403,
+      "counting": 0.221,
+      "left_right": 0.407,
+      "proximity": 0.377
+    },
+    "gt_objects": true
+  },
+  "delta_overall": 0.074
+}
