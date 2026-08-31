@@ -2,8 +2,6 @@
 
 **A Diagnostic Benchmark and Detector-Guided Prompting Framework for Fine-Grained Spatial Reasoning in Vision-Language Models**
 
-> **Work in progress** — Full paper targeting arXiv, September 2026.
-
 ---
 
 ## Key Finding
